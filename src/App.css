@@ -1,0 +1,406 @@
+html,
+body {
+  background-color: rgba(4, 45, 98, 1);
+  width: 1920px;
+  height: 1700px; 
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.premii_mobil {
+  display: none;
+}
+
+.img_fundal_mobil {
+  display: none;
+}
+
+header {
+  width: 1920px;
+  height: 100px;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 400px;
+  background: rgba(11, 13, 61, 1);
+  position: relative;
+  z-index: 3;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 4;
+}
+
+.logo img {
+  width: 120px;
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  left: 250px;
+  top: 18px;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+}
+
+nav ul li {
+  color: white;
+  font-size: 27px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+nav ul li.culoare_header {
+  color: rgba(240, 132, 86, 1);
+}
+
+.image-container1,
+.image-container2 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  mix-blend-mode: color-dodge;
+}
+
+.image1 {
+  width: 650px;
+  height: 1500px;
+  position: absolute;
+  top: -120px;
+  left: 0px;
+  transform: rotate(0deg);
+}
+
+.image2 {
+  width: 650px;
+  height: 1500px;
+  position: absolute;
+  top: -120px;
+  left: 810px;
+  transform: rotate(0deg);
+}
+
+.logo_middle {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+}
+
+.logo_middle img {
+  width: 250px;
+}
+
+.aplica_acum {
+  position: absolute;
+  top: 390px;
+  left: 530px;
+}
+
+.aplica_acum img {
+  width: 400px;
+}
+
+.zero {
+  position: absolute;
+  top: 550px;
+  left: 627px;
+}
+
+.zero img {
+  width: 180px;
+}
+
+.premii {
+  position: absolute;
+  top: 1000px;
+  left: 620px;
+}
+
+.premii img {
+  width: 200px;
+}
+
+.hackathon {
+  position: absolute;
+  top: 1200px;
+  left: 60px;
+}
+
+.hackathon img {
+  width: 200px;
+}
+
+.challenge {
+  position: absolute;
+  top: 1400px;
+  left: 60px;
+}
+
+.challenge img {
+  width: 200px;
+}
+
+.premii123 {
+  position: absolute;
+  top: 1280px;
+  left: 380px;
+}
+
+.premii123 img {
+  width: 700px;
+}
+
+.premii2123 {
+  position: absolute;
+  top: 1480px;
+  left: 380px;
+}
+
+.premii2123 img {
+  width: 700px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(4, 45, 98, 1), rgba(11, 13, 61, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 250px;
+
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-text,
+.footer-social {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    width: 100%;
+    height: 1883px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container1,
+  .image-container2,
+   header{
+    display: none;
+  }
+
+  /* header ul de la mobil*/
+  .mobile-only {
+    width: 100%;
+    height: 80px;
+    background: rgba(11, 13, 61, 1);
+    top: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: relative;
+    opacity: 0.9;
+
+    .hamburger_menu {
+      font-size: 24px;
+      position: absolute;
+      cursor: pointer;
+      color: white;
+      background-color: transparent;
+      border: none;
+      top: 20px;
+      left: 360px;
+      right: 20px;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: rgba(11, 13, 61, 1);
+      padding: 20px;
+      gap: 10px;
+      margin: 0;
+      z-index: 9;
+    }
+
+    nav ul.mobile_nav {
+      display: flex;
+    }
+
+  }
+
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    z-index: 4;
+  }
+
+  .logo img {
+    width: 90px;
+    height: 50px;
+  }
+
+  header {
+    display: none;
+  }
+
+  .img_fundal_mobil {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    mix-blend-mode: color-dodge;
+  }
+
+  .img_fundal_mobil img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: -77px;
+  }
+
+  .logo_middle {
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo_middle img {
+    width: 200px;
+  }
+
+  .aplica_acum {
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .aplica_acum img {
+    width: 300px;
+  }
+
+  .zero {
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .zero img {
+    width: 150px;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .premii {
+    display: none;
+  }
+
+  .hackathon {
+    display: none;
+  }
+
+  .challenge {
+    display: none;
+  }
+
+  .premii123 {
+    display: none;
+  }
+
+  .premii2123 {
+    display: none;
+  }
+
+  .premii_mobil {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 0;
+    top: 700px;
+    left: -10px;
+    margin-bottom: 0;
+  }
+
+  .premii_mobil img {
+    position: absolute;
+    width: 420px;
+  }
+
+  footer {
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(to bottom, rgba(4, 45, 98, 1), rgba(11, 13, 61, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: auto;
+    right: 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 45px;
+  }
+
+  .footer-text,
+  .footer-social {
+    width: 300px;
+    height: auto;
+  }
+
+}
