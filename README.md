@@ -1,5 +1,4 @@
-**Author:** Nedelcu Bianca-Nicoleta  
-**Group:** 323AB  
+**Author:** Nedelcu Bianca-Nicoleta   
 **Operating System Used:** Windows 10  
 **IDE Used:** Visual Studio Code 
 
